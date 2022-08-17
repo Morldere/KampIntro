@@ -10,7 +10,8 @@ Ceket ceket1 = new Ceket()
     Id = 1,
     Name = ceketModel1,
     Price = 500,
-    Size = "Medium"
+    Size = "Medium",
+    Explanation = "Very Exclusive jacket"
 };
 Ceket ceket2 = new Ceket()
 {
@@ -18,7 +19,8 @@ Ceket ceket2 = new Ceket()
     Id = 2,
     Name = ceketModel2,
     Price = 429,
-    Size = "Large"
+    Size = "Large",
+    Explanation = "Low Profile Jacket"
 };
 Ceket ceket3 = new Ceket()
 {
@@ -26,7 +28,9 @@ Ceket ceket3 = new Ceket()
     Id = 3,
     Name = ceketModel3,
     Price = 222,
-    Size = "Small"
+    Size = "Small",
+    Explanation = "Price-Performans jacket"
+    
 };
 Ceket ceket4 = new Ceket()
 {
@@ -34,7 +38,8 @@ Ceket ceket4 = new Ceket()
     Id = 4,
     Name = ceketModel4,
     Price = 144,
-    Size = "Small"
+    Size = "Small",
+    Explanation = "Common jacket"
 };
 Ceket ceket5 = new Ceket()
 {
@@ -42,20 +47,22 @@ Ceket ceket5 = new Ceket()
     Id = 5,
     Name = ceketModel5,
     Price = 199,
-    Size = "Small"
+    Size = "Small",
+    Explanation = "Oversize Luxury jacket"
 };
 Ceket[] ceketler = new Ceket[] { ceket1,ceket2,ceket3,ceket4,ceket5,};
 foreach (Ceket ceket in ceketler) {
-    Console.WriteLine(ceket.Id+" "+ceket.Name+" "+ceket.Price);
+    Console.WriteLine(ceket.Id+" "+ceket.Name+" "+ceket.Price+" "+ceket.Explanation+" ");
 }
 
 Console.WriteLine("sayfa sonu -footer");
 public class Ceket
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
     public decimal Price { get; set; }
-    public string Size { get; set; }
+    public string? Size { get; set; }
+    public string? Explanation { get; set; }
 }
 
 
